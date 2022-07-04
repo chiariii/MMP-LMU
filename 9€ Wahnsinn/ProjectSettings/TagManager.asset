@@ -47,3 +47,6 @@ TagManager:
   - name: Playmap
     uniqueID: 2488112093
     locked: 0
+  - name: Schaffner
+    uniqueID: 2368201107
+    locked: 0
