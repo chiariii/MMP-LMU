@@ -44,3 +44,6 @@ TagManager:
   - name: Background
     uniqueID: 3805358145
     locked: 0
+  - name: Playmap
+    uniqueID: 2488112093
+    locked: 0
