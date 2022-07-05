@@ -28,11 +28,13 @@ public class ScriptSchaffner : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (inputHorizonatal != 0 || inputVertical != 0)
+        if (inputHorizonatal != 0 || inputVertical != 0) // fuer diagonale Bewegung
         {
-                rb.velocity = new Vector2(inputHorizonatal * walkSpeed, inputVertical * walkSpeed); 
+            // movement speed limitieren
+            inputHorizonatal = inputHorizonatal * speedLimiter;
+            inputVertical = inputVertical * speedLimiter;
         }
-        
+        rb.velocity = new Vector2(inputHorizonatal * walkSpeed, inputVertical * walkSpeed); 
     }
 
 }
