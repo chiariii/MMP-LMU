@@ -12,11 +12,14 @@ public class ScriptSchaffner : MonoBehaviour
     float inputHorizonatal;
     float inputVertical;
 
+    private Animator anim;
+
 
     
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,6 +27,42 @@ public class ScriptSchaffner : MonoBehaviour
     {
         inputHorizonatal = Input.GetAxisRaw("Horizontal");
         inputVertical = Input.GetAxisRaw("Vertical");
+
+        if(inputVertical < 0 && inputHorizonatal == 0)
+        {
+            anim.SetBool("IsSouth", true);
+            anim.SetBool("IsNorth", false);
+            anim.SetBool("IsEast", false);
+            anim.SetBool("IsWest", false);
+        }
+        else if(inputVertical > 0 && inputHorizonatal == 0)
+        {
+            anim.SetBool("IsSouth", false);
+            anim.SetBool("IsNorth", true);
+            anim.SetBool("IsEast", false);
+            anim.SetBool("IsWest", false);
+        }
+        else if(inputHorizonatal < 0)
+        {
+            anim.SetBool("IsSouth", false);
+            anim.SetBool("IsNorth", false);
+            anim.SetBool("IsEast", false);
+            anim.SetBool("IsWest", true);
+        }
+        else if(inputHorizonatal > 0)
+        {
+            anim.SetBool("IsSouth", false);
+            anim.SetBool("IsNorth", false);
+            anim.SetBool("IsEast", true);
+            anim.SetBool("IsWest", false);
+        }
+        else 
+        {
+            anim.SetBool("IsSouth", false);
+            anim.SetBool("IsNorth", false);
+            anim.SetBool("IsEast", false);
+            anim.SetBool("IsWest", false);
+        }
     }
 
     void FixedUpdate()
