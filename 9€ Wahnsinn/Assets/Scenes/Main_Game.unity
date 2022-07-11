@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 134416257}
   - component: {fileID: 134416259}
   - component: {fileID: 134416260}
+  - component: {fileID: 134416261}
   m_Layer: 0
   m_Name: Schaffner
   m_TagString: Player
@@ -276,6 +277,26 @@ MonoBehaviour:
   firePoint: {fileID: 1481435637}
   bulletPrefab: {fileID: 7875743167460061098, guid: 9facf74f1a5822b42a4f0f32ec6b9058, type: 3}
   bulletForce: 20
+--- !u!95 &134416261
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134416253}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 24883ff7e3ddc8940b4be0be664a41ef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
