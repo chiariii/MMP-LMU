@@ -2246,7 +2246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034651337}
-  - component: {fileID: 2034651338}
+  - component: {fileID: 2034651339}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -2269,7 +2269,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2034651338
+--- !u!114 &2034651339
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2278,18 +2278,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2034651336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5278cc6edabd4f98e9a651bfea437, type: 3}
+  m_Script: {fileID: 11500000, guid: 66ac3d54cafa59e40b59589aa97cf10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   game_area: {fileID: 1041272594}
-  ship_prefab: {fileID: 573803468493694705, guid: d35b025ae8c1e5649927e5053db65699, type: 3}
-  ship_count: 0
-  ship_limit: 150
-  ships_per_frame: 1
-  spawn_circle_radius: 50
-  death_circle_radius: 60
-  fastest_speed: 5
-  slowest_speed: 1
+  pigeon_prefab: {fileID: 573803468493694705, guid: d35b025ae8c1e5649927e5053db65699, type: 3}
+  pigeon_count: 0
+  pigeon_limit: 150
+  pigeon_per_frame: 1
+  spawn_circle_radius: 80
+  death_circle_radius: 90
+  fastest_speed: 3
+  slowest_speed: 0.75
 --- !u!1 &2133751952
 GameObject:
   m_ObjectHideFlags: 0
