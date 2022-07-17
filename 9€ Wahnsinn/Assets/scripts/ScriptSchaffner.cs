@@ -44,10 +44,11 @@ public class ScriptSchaffner : MonoBehaviour
         }
         else if(inputHorizonatal < 0)
         {
+            transform.eulerAngles = new Vector3(0, 180, 0);	
             anim.SetBool("IsSouth", false);
             anim.SetBool("IsNorth", false);
-            anim.SetBool("IsEast", false);
-            anim.SetBool("IsWest", true);
+            anim.SetBool("IsEast", true);
+            anim.SetBool("IsWest", false);
         }
         else if(inputHorizonatal > 0)
         {
