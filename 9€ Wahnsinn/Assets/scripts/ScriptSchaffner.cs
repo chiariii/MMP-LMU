@@ -52,6 +52,7 @@ public class ScriptSchaffner : MonoBehaviour
         }
         else if(inputHorizonatal > 0)
         {
+            transform.eulerAngles = new Vector3(0, 0, 0);	
             anim.SetBool("IsSouth", false);
             anim.SetBool("IsNorth", false);
             anim.SetBool("IsEast", true);
@@ -64,6 +65,10 @@ public class ScriptSchaffner : MonoBehaviour
             anim.SetBool("IsEast", false);
             anim.SetBool("IsWest", false);
         }
+    }
+
+    public bool canShoot() {
+        return inputHorizonatal != 0;
     }
 
     void FixedUpdate()
