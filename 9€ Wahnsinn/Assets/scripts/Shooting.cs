@@ -6,6 +6,8 @@ public class Shooting : MonoBehaviour
 {
 
     [SerializeField] private float shootCooldown;
+    [SerializeField] private AudioClip clip;
+    
     public Transform firePoint;
     public GameObject bulletPrefab;
 
@@ -29,6 +31,7 @@ public class Shooting : MonoBehaviour
 
     void Shoot() 
     {
+        SoundManager.Instance.PlaySound(clip);
         cooldownTimer = 0;
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
