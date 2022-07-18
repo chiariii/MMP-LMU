@@ -9,8 +9,10 @@ public class ScriptSchaffner : MonoBehaviour
 
     float walkSpeed = 4f;
     float speedLimiter = 0.7f;
-    float inputHorizonatal;
+    float inputHorizontal;
     float inputVertical;
+
+    Vector2 movement;
 
     private Animator anim;
 
@@ -25,24 +27,27 @@ public class ScriptSchaffner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        inputHorizonatal = Input.GetAxisRaw("Horizontal");
+        inputHorizontal = Input.GetAxisRaw("Horizontal");
         inputVertical = Input.GetAxisRaw("Vertical");
 
-        if(inputVertical < 0 && inputHorizonatal == 0)
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+
+        if(inputVertical < 0 && inputHorizontal == 0)
         {
             anim.SetBool("IsSouth", true);
             anim.SetBool("IsNorth", false);
             anim.SetBool("IsEast", false);
             anim.SetBool("IsWest", false);
         }
-        else if(inputVertical > 0 && inputHorizonatal == 0)
+        else if(inputVertical > 0 && inputHorizontal == 0)
         {
             anim.SetBool("IsSouth", false);
             anim.SetBool("IsNorth", true);
             anim.SetBool("IsEast", false);
             anim.SetBool("IsWest", false);
         }
-        else if(inputHorizonatal < 0)
+        else if(inputHorizontal < 0)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);	
             anim.SetBool("IsSouth", false);
@@ -50,7 +55,7 @@ public class ScriptSchaffner : MonoBehaviour
             anim.SetBool("IsEast", true);
             anim.SetBool("IsWest", false);
         }
-        else if(inputHorizonatal > 0)
+        else if(inputHorizontal > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);	
             anim.SetBool("IsSouth", false);
@@ -68,18 +73,28 @@ public class ScriptSchaffner : MonoBehaviour
     }
 
     public bool canShoot() {
-        return inputHorizonatal != 0;
+        //return inputHorizontal != 0;
+        return true;
     }
 
     void FixedUpdate()
     {
-        if (inputHorizonatal != 0 || inputVertical != 0) // fuer diagonale Bewegung
+        /*
+        if (inputHorizontal != 0 || inputVertical != 0) // fuer diagonale Bewegung
         {
             // movement speed limitieren
-            inputHorizonatal = inputHorizonatal * speedLimiter;
+            inputHorizontal = inputHorizontal * speedLimiter;
             inputVertical = inputVertical * speedLimiter;
         }
-        rb.velocity = new Vector2(inputHorizonatal * walkSpeed, inputVertical * walkSpeed); 
+        
+        */
+        rb.velocity = new Vector2(inputHorizontal * walkSpeed, inputVertical * walkSpeed); 
+        rb.MovePosition(rb.position + movement * walkSpeed * Time.fixedDeltaTime);
+        /*
+        Vector2 lookDir = new Vector2(movement.x, movement.y);
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+        rb.rotation = angle;
+        */
     }
 
 }

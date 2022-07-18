@@ -32,7 +32,7 @@ public class Shooting : MonoBehaviour
     void Shoot() 
     {
         SoundManager.Instance.PlaySound(clip);
-        cooldownTimer = 0;
+        cooldownTimer = 0.7f;
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
