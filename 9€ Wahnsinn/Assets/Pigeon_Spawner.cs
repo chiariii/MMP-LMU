@@ -6,10 +6,14 @@ public class Pigeon_Spawner : MonoBehaviour
 {
 
     [SerializeField]
-    private GameObject pigeonPrefab;
+    private GameObject pigeonPrefab1;
 
     [SerializeField]
-    private float respawnTime  = 20f;
+    private GameObject pigeonPrefab2;
+
+
+    [SerializeField]
+    private float respawnTime  = 5f;
 
     private Vector2 screenBounds;
 
@@ -23,7 +27,10 @@ public class Pigeon_Spawner : MonoBehaviour
 
      void AddPigeon()
     {
-        GameObject pigeonInstance = Instantiate(pigeonPrefab) as GameObject;
+        GameObject[] pigeons = {pigeonPrefab1, pigeonPrefab2};
+        int index = Random.Range(0, pigeons.Length);
+
+        GameObject pigeonInstance = Instantiate(pigeons[index]) as GameObject;
         float spawnY = Random.Range(1, screenBounds.y);
         pigeonInstance.transform.position = new Vector2(10,spawnY);
     }
