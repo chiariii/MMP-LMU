@@ -3369,37 +3369,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249913127}
   m_CullTransparentMesh: 1
---- !u!1 &1308915693
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1308915694}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1308915694
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308915693}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8780476, y: -0.77592, z: -0.0130619565}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1373926623
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,6 +5996,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915970611}
   m_CullTransparentMesh: 1
+--- !u!1 &2023922961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023922963}
+  - component: {fileID: 2023922964}
+  m_Layer: 0
+  m_Name: Pigeon_Spawner_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2023922963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023922961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01108843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2023922964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023922961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cbe61c075819444a843f9377b21d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pigeonPrefab1: {fileID: 573803468493694705, guid: 2b60725bcc06fea40b5a27e941fd2064, type: 3}
+  pigeonPrefab2: {fileID: 573803468493694705, guid: e0a24ab9a161d954b8fbd1290bf3d4f1, type: 3}
+  respawnTime: 10
 --- !u!1 &2034651336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6038,7 +6054,7 @@ GameObject:
   - component: {fileID: 2034651337}
   - component: {fileID: 2034651338}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: Pigeon_Spawner_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6073,7 +6089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pigeonPrefab1: {fileID: 573803468493694705, guid: d35b025ae8c1e5649927e5053db65699, type: 3}
   pigeonPrefab2: {fileID: 573803468493694705, guid: 68bf8878172fce54296b368dcde96528, type: 3}
-  respawnTime: 5
+  respawnTime: 10
 --- !u!1 &2110692871
 GameObject:
   m_ObjectHideFlags: 0

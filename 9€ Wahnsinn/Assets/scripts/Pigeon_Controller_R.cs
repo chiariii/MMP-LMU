@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pigeon_Controller : MonoBehaviour
+public class Pigeon_Controller_R : MonoBehaviour
 {
 
     [SerializeField]

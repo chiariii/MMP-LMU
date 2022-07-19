@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6125368378947568774}
   - component: {fileID: 7267634662640473860}
   m_Layer: 0
-  m_Name: PFB_Pigeon2
+  m_Name: Dark_Pigeon_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 6960493439604341515}
   - component: {fileID: 7903284948105593906}
   m_Layer: 0
-  m_Name: PigeonFlight2
+  m_Name: PigeonFlight1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +142,7 @@ SpriteRenderer:
   m_SortingLayerID: -1926766189
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 95edbe8ef71fa8941a4dd1275e81cefa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f52ec7be336a2944b7f21332fb84fe8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -163,7 +163,7 @@ Animator:
   m_GameObject: {fileID: 2235428157891094703}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9738a89742981a14288535010910ef93, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9c604f53a06373d478e04e112cff21f6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

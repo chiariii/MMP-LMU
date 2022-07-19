@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4698926234560197518}
   - component: {fileID: 6125368378947568774}
-  - component: {fileID: 7267634662640473860}
+  - component: {fileID: -5329882152742706564}
   m_Layer: 0
-  m_Name: PFB_Pigeon1
+  m_Name: Dark_Pigeon_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +55,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7267634662640473860
+--- !u!114 &-5329882152742706564
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 573803468493694705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 608106be6ad525e4e8cffd75c239ef95, type: 3}
+  m_Script: {fileID: 11500000, guid: ff4018b89a2a5d74c86d50ce53882830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
@@ -144,7 +144,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f52ec7be336a2944b7f21332fb84fe8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
