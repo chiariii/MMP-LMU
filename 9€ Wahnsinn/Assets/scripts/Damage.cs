@@ -22,7 +22,7 @@ public class Damage : MonoBehaviour
     {
 		if (Input.GetKeyDown(KeyCode.Q))
 		{
-			TakeDamage(10);
+			TakeDamage(8);
 		}
     }
 
