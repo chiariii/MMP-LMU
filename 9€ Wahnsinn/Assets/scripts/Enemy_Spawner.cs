@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,8 +24,13 @@ public class Enemy_Spawner : MonoBehaviour
     {
         GameObject passengersInstance = Instantiate(EnemyPrefab) as GameObject;
 
-        float spawnY = Random.Range(-screenBounds.y - 3, 0);
-        passengersInstance.transform.position = new Vector2(-screenBounds.x, spawnY);
+        float[] positions = {-2.0f, -4.0f};
+        int index = Random.Range(0, positions.Length);
+
+        float[] positions1 = {-10.0f, 10.0f};
+        int index1 = Random.Range(0, positions.Length);
+
+        passengersInstance.transform.position = new Vector2(positions1[index1], positions[index]);
     }
 
     private IEnumerator EnemySpawn()
