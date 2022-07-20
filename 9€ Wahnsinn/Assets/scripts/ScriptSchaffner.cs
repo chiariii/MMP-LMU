@@ -79,7 +79,7 @@ public class ScriptSchaffner : MonoBehaviour
 
     void FixedUpdate()
     {
-        /*
+        
         if (inputHorizontal != 0 || inputVertical != 0) // fuer diagonale Bewegung
         {
             // movement speed limitieren
@@ -87,7 +87,7 @@ public class ScriptSchaffner : MonoBehaviour
             inputVertical = inputVertical * speedLimiter;
         }
         
-        */
+        
         rb.velocity = new Vector2(inputHorizontal * walkSpeed, inputVertical * walkSpeed); 
         rb.MovePosition(rb.position + movement * walkSpeed * Time.fixedDeltaTime);
         /*
