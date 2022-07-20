@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class PassengerSpawner : MonoBehaviour
 {
-[SerializeField]
+    [SerializeField]
     private GameObject PassengerPrefab1;
-
-    //[SerializeField]
-    //private GameObject pigeonPrefab2;
-
 
     [SerializeField]
     private float respawnTime  = 5f;
@@ -21,17 +17,15 @@ public class PassengerSpawner : MonoBehaviour
     void Start()
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
-        //StartCoroutine(PassengerSpawn());
+        StartCoroutine(PassengerSpawn());
     }
 
      void AddPassenger()
     {
-        GameObject[] passengers = {PassengerPrefab1};
-        int index = Random.Range(0, passengers.Length);
 
-        GameObject passengersInstance = Instantiate(passengers[index]) as GameObject;
-        float spawnX = Random.Range(-screenBounds.x, screenBounds.y);
-        passengersInstance.transform.position = new Vector2(spawnX, screenBounds.y * 2);
+        GameObject passengersInstance = Instantiate(PassengerPrefab1) as GameObject;
+        float spawnX = Random.Range(-7, 7);
+        passengersInstance.transform.position = new Vector2(spawnX, -screenBounds.y - 3);
     }
 
     private IEnumerator PassengerSpawn()

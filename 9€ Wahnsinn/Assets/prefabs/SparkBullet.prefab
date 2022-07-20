@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3376741573379465563}
   - component: {fileID: 3376741573379465567}
   - component: {fileID: 3376741573379465566}
+  - component: {fileID: -2043262012894873399}
   m_Layer: 0
   m_Name: SparkBullet
   m_TagString: Untagged
@@ -154,3 +155,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23952863, y: 0.08335016}
   m_EdgeRadius: 0
+--- !u!114 &-2043262012894873399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3376741573379465562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53cf6091fcb79f74e8de4ee52a69aecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyFollowsPlayer : MonoBehaviour
 {
     public float speed;
-    public float lineOfSight;
+    public float lineOfSight = 10f;
     private Transform player;
 
     // Start is called before the first frame update
@@ -31,4 +31,6 @@ public class EnemyFollowsPlayer : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSight);
     }
+
+
 }

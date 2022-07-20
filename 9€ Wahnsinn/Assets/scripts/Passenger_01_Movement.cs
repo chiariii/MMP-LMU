@@ -21,31 +21,23 @@ public class Passenger_01_Movement : MonoBehaviour
 
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
     }
-    // Update is called once per frame
+    
     void Update()
     {
-        
-        //movement.x = Input.GetAxisRaw("Horizontal");
-        //movement.y = Input.GetAxisRaw("Vertical");
-        //transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
        
         movement.x = 0;
         movement.y = -transform.position.y; 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
-        //if (movement.y > screenBounds.y * 2)
-        Debug.Log(movement.sqrMagnitude);
+        
+        
         if (movement.sqrMagnitude <= 0.001f)
         {
-           Debug.Log(movement.sqrMagnitude);
            Destroy(this.gameObject);
         }
         
     }
 
-    void FixedUpdate()
-    {
-        //rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }
+
 }

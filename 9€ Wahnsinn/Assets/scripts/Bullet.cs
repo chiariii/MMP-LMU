@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public GameObject hitEffect;
+    //public GameObject hitEffect;
 
-    void OnCollisionEnter2D(Collision2D collision) 
+   /* void OnCollisionEnter2D(Collision2D collision) 
     {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
+        Destroy(collision.gameObject);
         Destroy(gameObject);
+    }*/
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+      Destroy(collision.gameObject);
+      Destroy(this.gameObject);
     }
 
 }
