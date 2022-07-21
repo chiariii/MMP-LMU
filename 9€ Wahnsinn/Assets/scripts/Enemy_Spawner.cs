@@ -6,7 +6,10 @@ using UnityEngine;
 public class Enemy_Spawner : MonoBehaviour
 {
     [SerializeField]
-    private GameObject EnemyPrefab;
+    private GameObject EnemyPrefab1;
+
+    [SerializeField]
+    private GameObject EnemyPrefab2;
 
     [SerializeField]
     private float respawnTime  = 5f;
@@ -22,7 +25,11 @@ public class Enemy_Spawner : MonoBehaviour
 
      void AddEnemy()
     {
-        GameObject passengersInstance = Instantiate(EnemyPrefab) as GameObject;
+
+        GameObject[] enemies = {EnemyPrefab1, EnemyPrefab2};
+        int randomEnemy = Random.Range(0, enemies.Length);
+
+        GameObject passengersInstance = Instantiate(enemies[randomEnemy]) as GameObject;
 
         float[] positions = {-2.0f, -4.0f};
         int index = Random.Range(0, positions.Length);

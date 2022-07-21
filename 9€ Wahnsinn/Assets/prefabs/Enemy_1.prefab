@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2253933259368905550}
   - component: {fileID: 2253933259368905549}
   m_Layer: 0
-  m_Name: Passenger_03_Enemy
+  m_Name: Enemy_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

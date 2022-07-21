@@ -3695,6 +3695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PassengerPrefab1: {fileID: 8149249633501831713, guid: 0f609c833342d5a4d9a26bc85b822861, type: 3}
+  PassengerPrefab2: {fileID: 8149249633501831713, guid: 0f609c833342d5a4d9a26bc85b822861, type: 3}
   respawnTime: 3
 --- !u!4 &856432155
 Transform:
@@ -5429,8 +5430,6 @@ GameObject:
   - component: {fileID: 1489901960}
   - component: {fileID: 1489901959}
   - component: {fileID: 1489901961}
-  - component: {fileID: 1489901964}
-  - component: {fileID: 1489901963}
   m_Layer: 0
   m_Name: Foreground-Tilemap
   m_TagString: Untagged
@@ -8089,7 +8088,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04040146, y: 2.1623392}
+  m_Offset: {x: -0.47685528, y: 2.2147136}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8100,7 +8099,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 17.919197, y: 1.6926774}
+  m_Size: {x: 14.951315, y: 1.5879288}
   m_EdgeRadius: 0
 --- !u!50 &1489901960
 Rigidbody2D:
@@ -8135,58 +8134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e78aa8e5eca3342a75c25cd549548f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &1489901963
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489901955}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -8.836113, y: -3.084125}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.28430176, y: 0.9879701}
-  m_EdgeRadius: 0
---- !u!61 &1489901964
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489901955}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -8.836113, y: -0.037842095}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.28430176, y: 2.6151776}
-  m_EdgeRadius: 0
 --- !u!1 &1490136924
 GameObject:
   m_ObjectHideFlags: 0
@@ -9235,7 +9182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9230750c00274144cbc53d49848f19f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 2253933259368905544, guid: 70c1c2a2006e01748937db3af27c53da, type: 3}
+  EnemyPrefab1: {fileID: 2253933259368905544, guid: 70c1c2a2006e01748937db3af27c53da, type: 3}
+  EnemyPrefab2: {fileID: 254673452977406942, guid: 241918368dc0833469f6c0ce72719a9c, type: 3}
   respawnTime: 5
 --- !u!4 &1984675791
 Transform:
