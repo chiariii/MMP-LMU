@@ -9458,7 +9458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab1: {fileID: 2253933259368905544, guid: 70c1c2a2006e01748937db3af27c53da, type: 3}
-  EnemyPrefab2: {fileID: 254673452977406942, guid: 241918368dc0833469f6c0ce72719a9c, type: 3}
+  EnemyPrefab2: {fileID: 2253933259368905544, guid: 70c1c2a2006e01748937db3af27c53da, type: 3}
   respawnTime: 5
 --- !u!4 &1984675791
 Transform:
