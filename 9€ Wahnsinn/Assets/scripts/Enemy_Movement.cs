@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Passenger_03_EnemyFollowsPlayer : MonoBehaviour
+public class Enemy_Movement : MonoBehaviour
 {
     public float speed;
     public float lineOfSight = 10f;
@@ -30,6 +30,7 @@ public class Passenger_03_EnemyFollowsPlayer : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
     }
 
     // For testing purposes only: Making the Sphere visible

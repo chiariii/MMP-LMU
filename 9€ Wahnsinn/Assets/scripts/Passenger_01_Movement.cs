@@ -32,6 +32,10 @@ public class Passenger_01_Movement : MonoBehaviour
             movement.y = transform.position.y;
         }
 
+        if(transform.position.y > 1){
+            Destroy(this.gameObject);
+        }
+
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
