@@ -17,19 +17,28 @@ public class Damage : MonoBehaviour
 		healthBar.SetMaxHealth(maxHealth);
     }
 
-    // Update is called once per frame
+    /* Update is called once per frame
     void Update()
     {
 		if (Input.GetKeyDown(KeyCode.Q))
 		{
-			TakeDamage(8);
+			TakeDamage(10);
 		}
     }
-
-	void TakeDamage(int damage)
+    */
+	public void TakeDamage(int damage)
 	{
 		currentHealth -= damage;
 
 		healthBar.SetHealth(currentHealth);
 	}
+
+
+	private void OnCollisionEnter2D(Collision2D collision){
+	if (collision.gameObject.tag == "Enemy")
+		{
+			TakeDamage(10);
+		}
+	}
 }
+

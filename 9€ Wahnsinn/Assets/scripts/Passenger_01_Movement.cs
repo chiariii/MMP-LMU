@@ -7,7 +7,7 @@ public class Passenger_01_Movement : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public Animator animator;
-
+    //public Damage health;
     Vector2 movement;
     private Vector2 screenBounds;
 
@@ -34,6 +34,7 @@ public class Passenger_01_Movement : MonoBehaviour
 
         if(transform.position.y > 1){
             Destroy(this.gameObject);
+            //health.TakeDamage(10);
         }
 
         animator.SetFloat("Horizontal", movement.x);
