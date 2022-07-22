@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8749579688181959677}
   m_Layer: 0
   m_Name: Passenger_2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   speed: 1.5
   rb: {fileID: 8749579688181959676}
   animator: {fileID: 8749579688181959664}
+  health: {fileID: 0}
 --- !u!50 &8749579688181959676
 Rigidbody2D:
   serializedVersion: 4
