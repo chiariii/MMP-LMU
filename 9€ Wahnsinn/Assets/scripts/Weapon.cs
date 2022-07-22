@@ -14,7 +14,7 @@ public class Weapon : MonoBehaviour
 
     public void Fire() 
     {
-    // SoundManager.Instance.PlaySound(shot);  //way too loud
+    SoundManager.Instance.PlaySound(shot);  //way too loud
     GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireForce, ForceMode2D.Impulse);
     }
