@@ -5,14 +5,16 @@ using UnityEngine;
 public class ScriptSchaffner : MonoBehaviour
 {
 
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
+    public Rigidbody2D rbWeapon;
+    public Weapon weapon;
 
     float walkSpeed = 4f;
     float speedLimiter = 0.7f;
     float inputHorizontal;
     float inputVertical;
 
-    Vector2 movement;
+    Vector2 moveDirection;
 
     private Animator anim;
 
@@ -30,8 +32,14 @@ public class ScriptSchaffner : MonoBehaviour
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         inputVertical = Input.GetAxisRaw("Vertical");
 
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        if(Input.GetKeyDown("space")) {
+            weapon.Fire();
+        }
+
+        moveDirection = new Vector2(moveX, moveY).normalized;
 
         if(inputVertical < 0 && inputHorizontal == 0)
         {
@@ -72,7 +80,8 @@ public class ScriptSchaffner : MonoBehaviour
         }
     }
 
-    public bool canShoot() {
+    public bool canShoot() 
+    {
         //return inputHorizontal != 0;
         return true;
     }
@@ -88,12 +97,15 @@ public class ScriptSchaffner : MonoBehaviour
         }
         
         
-        rb.velocity = new Vector2(inputHorizontal * walkSpeed, inputVertical * walkSpeed); 
-        rb.MovePosition(rb.position + movement * walkSpeed * Time.fixedDeltaTime);
+        rb.velocity = new Vector2(moveDirection.x * walkSpeed, moveDirection.y * walkSpeed); 
+        //Vector2 aimDirection = rbWeapon.position;
+        //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg -90f;
+        //rb.rotation = aimAngle;
+        
+        //rb.MovePosition(rb.position + movement * walkSpeed * Time.fixedDeltaTime);
         /*
-        Vector2 lookDir = new Vector2(movement.x, movement.y);
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
+        
+       
         */
     }
 
