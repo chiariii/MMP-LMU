@@ -3695,7 +3695,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PassengerPrefab1: {fileID: 8149249633501831713, guid: 0f609c833342d5a4d9a26bc85b822861, type: 3}
-  PassengerPrefab2: {fileID: 8149249633501831713, guid: 0f609c833342d5a4d9a26bc85b822861, type: 3}
+  PassengerPrefab2: {fileID: 8749579688181959665, guid: 9e52e5bc8ca69b34abfc684ee0eec3d5, type: 3}
+  PassengerPrefab3: {fileID: 2140686755908353685, guid: 6d32ebdee2392304d9abf16a41857c63, type: 3}
+  PassengerPrefab4: {fileID: 1623174478616518337, guid: ad4339b95ee65a143a6a039b77abf90e, type: 3}
   respawnTime: 3
 --- !u!4 &856432155
 Transform:

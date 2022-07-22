@@ -11,6 +11,12 @@ public class PassengerSpawner : MonoBehaviour
     private GameObject PassengerPrefab2;
 
     [SerializeField]
+    private GameObject PassengerPrefab3;
+
+    [SerializeField]
+    private GameObject PassengerPrefab4;
+
+    [SerializeField]
     private float respawnTime  = 5f;
 
     private Vector2 screenBounds;
@@ -26,7 +32,7 @@ public class PassengerSpawner : MonoBehaviour
      void AddPassenger()
     {
 
-        GameObject[] passengers = {PassengerPrefab1, PassengerPrefab2};
+        GameObject[] passengers = {PassengerPrefab1, PassengerPrefab2, PassengerPrefab3, PassengerPrefab4};
         int randomPassenger = Random.Range(0, passengers.Length);
 
         GameObject passengersInstance = Instantiate(passengers[randomPassenger]) as GameObject;
