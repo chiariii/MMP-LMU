@@ -17,15 +17,7 @@ public class Damage : MonoBehaviour
 		healthBar.SetMaxHealth(maxHealth);
     }
 
-    /* Update is called once per frame
-    void Update()
-    {
-		if (Input.GetKeyDown(KeyCode.Q))
-		{
-			TakeDamage(10);
-		}
-    }
-    */
+   
 	public void TakeDamage(int damage)
 	{
 		currentHealth -= damage;

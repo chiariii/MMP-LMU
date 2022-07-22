@@ -7,7 +7,6 @@ public class Passenger_01_Movement : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public Animator animator;
-    public Damage health;
     Vector2 movement;
     private Vector2 screenBounds;
 
@@ -15,8 +14,10 @@ public class Passenger_01_Movement : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
         
         rb.velocity = new Vector2(0, speed);
+
 
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
     }
@@ -32,11 +33,6 @@ public class Passenger_01_Movement : MonoBehaviour
             movement.y = transform.position.y;
         }
 
-        if(transform.position.y > 1){
-            Destroy(this.gameObject);
-            health.TakeDamage(10);
-            
-        }
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);

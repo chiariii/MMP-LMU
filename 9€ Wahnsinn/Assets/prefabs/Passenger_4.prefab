@@ -103,7 +103,6 @@ MonoBehaviour:
   speed: 1.5
   rb: {fileID: 1623174478616518365}
   animator: {fileID: 1623174478616518367}
-  health: {fileID: 0}
 --- !u!50 &1623174478616518365
 Rigidbody2D:
   serializedVersion: 4
@@ -112,18 +111,18 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623174478616518337}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &1623174478616518338
 CapsuleCollider2D:
