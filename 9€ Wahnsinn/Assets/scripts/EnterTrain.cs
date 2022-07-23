@@ -9,6 +9,7 @@ public class EnterTrain : MonoBehaviour
 
 	public Trainbar trainBar;
 	public GameObject GameOverScreen;
+	public GameObject full;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class EnterTrain : MonoBehaviour
 
 		if(currentCapacity == maxCapacity){
 			Time.timeScale = 0f;
+			full.SetActive(true);
         	GameOverScreen.SetActive(true);
 			//UnityEditor.EditorApplication.isPlaying = false;
 			//Application.Quit();
@@ -37,7 +39,7 @@ private void OnCollisionEnter2D(Collision2D collision){
 		{
 			Destroy(collision.gameObject);
 			PassengerEntersTrain(1);
-			ScoreManager.instance.AddPoint(50);
+			//ScoreManager.instance.AddPoint(50);
 		}
 	}		
 
