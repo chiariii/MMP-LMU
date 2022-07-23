@@ -10,6 +10,8 @@ public class Damage : MonoBehaviour
 
 	public Healthbar healthBar;
 
+	public GameObject GameOverScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +27,10 @@ public class Damage : MonoBehaviour
 		healthBar.SetHealth(currentHealth);
 
 		if(currentHealth == 0){
-			UnityEditor.EditorApplication.isPlaying = false;
-			Application.Quit();
+			Time.timeScale = 0f;
+        	GameOverScreen.SetActive(true);
+			//UnityEditor.EditorApplication.isPlaying = false;
+			//Application.Quit();
 		}
 	}
 

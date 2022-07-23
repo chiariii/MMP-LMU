@@ -22,7 +22,7 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("space") && Schaffner.canShoot() && cooldownTimer > shootCooldown) {
+        if(Input.GetKeyDown("space") && cooldownTimer > shootCooldown) {
             Shoot();
 
         }

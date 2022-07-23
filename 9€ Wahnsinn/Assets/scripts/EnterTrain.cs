@@ -8,6 +8,7 @@ public class EnterTrain : MonoBehaviour
 	public int currentCapacity;
 
 	public Trainbar trainBar;
+	public GameObject GameOverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +25,10 @@ public class EnterTrain : MonoBehaviour
 		trainBar.SetCapacity(currentCapacity);
 
 		if(currentCapacity == maxCapacity){
-			UnityEditor.EditorApplication.isPlaying = false;
-			Application.Quit();
+			Time.timeScale = 0f;
+        	GameOverScreen.SetActive(true);
+			//UnityEditor.EditorApplication.isPlaying = false;
+			//Application.Quit();
 		}
 	}
 

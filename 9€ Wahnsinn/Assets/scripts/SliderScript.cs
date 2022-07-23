@@ -14,4 +14,10 @@ public class SliderScript : MonoBehaviour
         slider.onValueChanged.AddListener(val => SoundManager.Instance.ChangeVolume(val));
     }
 
+    public void SetSlider(int vol)
+    {
+        slider.maxValue = vol;
+        slider.value = vol;
+    }
+
 }

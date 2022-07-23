@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+
+    [SerializeField] private AudioClip shot;
+
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float fireForce = 20f;
-
-    //[SerializeField] private float shootCooldown;
-    [SerializeField] private AudioClip shot;
-    // private float cooldownTimer = Mathf.Infinity;
+    
 
     public void Fire() 
     {
-    SoundManager.Instance.PlaySound(shot);  //way too loud
+    SoundManager.Instance.PlaySound(shot); 
     GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireForce, ForceMode2D.Impulse);
     }

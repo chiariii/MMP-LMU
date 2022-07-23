@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ScriptSchaffner : MonoBehaviour
 {
-
     public Rigidbody2D rb;
     public Rigidbody2D rbWeapon;
     public Weapon weapon;
@@ -35,8 +34,10 @@ public class ScriptSchaffner : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        if(Input.GetKeyDown("space")) {
+        if(Input.GetKeyDown("space")) 
+        {
             weapon.Fire();
+
         }
 
         moveDirection = new Vector2(moveX, moveY).normalized;
@@ -78,12 +79,6 @@ public class ScriptSchaffner : MonoBehaviour
             anim.SetBool("IsEast", false);
             anim.SetBool("IsWest", false);
         }
-    }
-
-    public bool canShoot() 
-    {
-        //return inputHorizontal != 0;
-        return true;
     }
 
     void FixedUpdate()
