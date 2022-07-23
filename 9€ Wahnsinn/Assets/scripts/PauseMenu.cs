@@ -45,6 +45,7 @@ public class PauseMenu : MonoBehaviour
     {
         IsPaused = false;
         Time.timeScale = 1f;
+        ScoreManager.score = 0;
         // SoundManager.Instance.Stop();
         SceneManager.LoadScene(0);
     }
