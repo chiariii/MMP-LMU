@@ -37,6 +37,7 @@ private void OnCollisionEnter2D(Collision2D collision){
 		{
 			Destroy(collision.gameObject);
 			PassengerEntersTrain(1);
+			ScoreManager.instance.AddPoint(50);
 		}
 	}		
 
