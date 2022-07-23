@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnterTrain : MonoBehaviour
 {
-    public int maxCapacity = 10;
+  public int maxCapacity = 10;
 	public int currentCapacity;
 
 	public Trainbar trainBar;
@@ -22,6 +22,11 @@ public class EnterTrain : MonoBehaviour
 		currentCapacity += enter;
 
 		trainBar.SetCapacity(currentCapacity);
+
+		if(currentCapacity == maxCapacity){
+			UnityEditor.EditorApplication.isPlaying = false;
+			Application.Quit();
+		}
 	}
 
 private void OnCollisionEnter2D(Collision2D collision){
@@ -30,6 +35,6 @@ private void OnCollisionEnter2D(Collision2D collision){
 			Destroy(collision.gameObject);
 			PassengerEntersTrain(1);
 		}
-	}
+	}		
 
 }

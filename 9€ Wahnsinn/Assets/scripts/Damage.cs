@@ -23,6 +23,11 @@ public class Damage : MonoBehaviour
 		currentHealth -= damage;
 
 		healthBar.SetHealth(currentHealth);
+
+		if(currentHealth == 0){
+			UnityEditor.EditorApplication.isPlaying = false;
+			Application.Quit();
+		}
 	}
 
 
@@ -32,5 +37,7 @@ public class Damage : MonoBehaviour
 			TakeDamage(10);
 		}
 	}
+
+
 }
 
