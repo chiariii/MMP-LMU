@@ -3489,6 +3489,7 @@ MonoBehaviour:
   PassengerPrefab2: {fileID: 8749579688181959665, guid: 9e52e5bc8ca69b34abfc684ee0eec3d5, type: 3}
   PassengerPrefab3: {fileID: 2140686755908353685, guid: 6d32ebdee2392304d9abf16a41857c63, type: 3}
   PassengerPrefab4: {fileID: 1623174478616518337, guid: ad4339b95ee65a143a6a039b77abf90e, type: 3}
+  PassengerPrefab5: {fileID: 7138627290167286483, guid: b820e29a9b1a3584e89479d21de41019, type: 3}
   respawnTime: 3
 --- !u!4 &856432155
 Transform:
@@ -9483,7 +9484,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -15.9, y: -71.5}
+  m_AnchoredPosition: {x: -15.899994, y: -71.5}
   m_SizeDelta: {x: 463.2564, y: 11.856201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1955993180
@@ -9580,7 +9581,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab1: {fileID: 2253933259368905544, guid: 70c1c2a2006e01748937db3af27c53da, type: 3}
-  EnemyPrefab2: {fileID: 2253933259368905544, guid: 70c1c2a2006e01748937db3af27c53da, type: 3}
+  EnemyPrefab2: {fileID: 394026950821228366, guid: a6385559d39386049aa388a27cae7e28, type: 3}
+  EnemyPrefab3: {fileID: 6975311325619118261, guid: 9deb421441f8fd3409595546c510047e, type: 3}
   respawnTime: 5
 --- !u!4 &1984675791
 Transform:

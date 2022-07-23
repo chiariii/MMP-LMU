@@ -12,6 +12,9 @@ public class Enemy_Spawner : MonoBehaviour
     private GameObject EnemyPrefab2;
 
     [SerializeField]
+    private GameObject EnemyPrefab3;
+
+    [SerializeField]
     private float respawnTime  = 5f;
 
     private Vector2 screenBounds;
@@ -26,7 +29,7 @@ public class Enemy_Spawner : MonoBehaviour
      void AddEnemy()
     {
 
-        GameObject[] enemies = {EnemyPrefab1, EnemyPrefab2};
+        GameObject[] enemies = {EnemyPrefab1, EnemyPrefab2, EnemyPrefab3};
         int randomEnemy = Random.Range(0, enemies.Length);
 
         GameObject passengersInstance = Instantiate(enemies[randomEnemy]) as GameObject;
