@@ -11,18 +11,13 @@ public class Trainbar : MonoBehaviour
     public void SetMaxCapacity(int capacity)
     {
         trainSlider.maxValue = capacity;
-        
-
-    
+            
     }
 
     public void SetCurrentInTrain(int numberOfPassengers)
     {
- 
-        trainSlider.value = numberOfPassengers;
-        fill.color = gradient.Evaluate(trainSlider.normalizedValue);
-
-        
+         trainSlider.value = numberOfPassengers;
+        fill.color = gradient.Evaluate(trainSlider.normalizedValue);        
     }
 
 }

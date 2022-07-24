@@ -28,9 +28,8 @@ public class EnterTrain : MonoBehaviour
 		if(currentPassengers == maxCapacity){
 			Time.timeScale = 0f;
 			full.SetActive(true);
-        	GameOverScreen.SetActive(true);
-			//UnityEditor.EditorApplication.isPlaying = false;
-			//Application.Quit();
+      GameOverScreen.SetActive(true);
+			
 		}
 	}
 
@@ -39,7 +38,6 @@ private void OnCollisionEnter2D(Collision2D collision){
 		{
 			Destroy(collision.gameObject);
 			PassengerEntersTrain(1);
-			//ScoreManager.instance.AddPoint(50);
 		}
 	}		
 

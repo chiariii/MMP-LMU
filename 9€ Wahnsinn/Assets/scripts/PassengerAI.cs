@@ -123,25 +123,6 @@ public class PassengerAI : MonoBehaviour
         {
             movement.y = transform.position.y;
         }
-        
-        /*
-        if (force.x >= 0.01f && transform.position.x < 0)
-        {
-            movement.x = -transform.position.x;
-        }
-        else if (force.x <= -0.01f && transform.position.x > 0)
-        {
-            movement.x = transform.position.x;
-        }
-        else if (force.y >= 0.01f && transform.position.y < 0)
-        {
-            movement.y = -transform.position.y;
-        }
-        else if (force.y <= -0.01f && transform.position.y > 0)
-        {
-            movement.y = transform.position.y;
-        }
-        */
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);

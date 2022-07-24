@@ -6,7 +6,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public GameObject hcingo;
+    public GameObject highScoreField;
 
     public static ScoreManager instance;
     public TextMeshProUGUI scoreText;
@@ -20,28 +20,12 @@ public class ScoreManager : MonoBehaviour
         instance = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         instance.highscore = PlayerPrefs.GetInt("highscore", 0);
-        //scoreText = GetComponent<TextMeshProUGUI>();
-        //highscoreText = GetComponent<TextMeshProUGUI>();
-
-        //scoreText.text = score.ToString() + " POINTS";
-        //highscoreText.text = "HIGHSCORE: " + highscore.ToString();
-
         instance.scoreText.SetText(score.ToString() + " POINTS");
         instance.highscoreText.SetText("HIGHSCORE: " + highscore.ToString());
     }
-
-    // Update is called once per frame
-    /*void Update()
-    {
-        scoreText.SetText(score.ToString() + " POINTS");
-        //highscoreText.SetText("HIGHSCORE: " + highscore.ToString());
-        
-    }
-    */
 
     public void AddPoint(int x)
     {
@@ -50,7 +34,7 @@ public class ScoreManager : MonoBehaviour
         if(highscore < score) 
         {
             PlayerPrefs.SetInt("highscore", score);
-            hcingo.SetActive(true); //shows highscore in gameoverscreen
+            highScoreField.SetActive(true); 
         }
         
     }

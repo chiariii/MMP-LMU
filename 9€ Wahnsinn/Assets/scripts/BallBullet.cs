@@ -12,11 +12,5 @@ public class BallBullet : MonoBehaviour
         Destroy(this.gameObject);
         ScoreManager.instance.AddPoint(100);
       }
-
-      else if (collision.gameObject.tag == "Untagged")
-      {
-        Destroy(this.gameObject);
-        ScoreManager.score += 50;
-        }
     }
 }

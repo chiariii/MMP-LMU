@@ -11,14 +11,14 @@ public class Damage : MonoBehaviour
 	public Healthbar healthBar;
 
 	public GameObject GameOverScreen;
-	public GameObject uded;
+	public GameObject youDiedScreen;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+
+  void Start()
+  {
 		currentHealth = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
-    }
+  }
 
    
 	public void TakeDamage(int damage)
@@ -29,13 +29,10 @@ public class Damage : MonoBehaviour
 
 		if(currentHealth <= 0){
 			Time.timeScale = 0f;
-			uded.SetActive(true);
-        	GameOverScreen.SetActive(true);
-			//UnityEditor.EditorApplication.isPlaying = false;
-			//Application.Quit();
+			youDiedScreen.SetActive(true);
+      GameOverScreen.SetActive(true);
 		}
 	}
-
 
 	private void OnCollisionEnter2D(Collision2D collision){
 	if (collision.gameObject.tag == "Enemy")

@@ -91,17 +91,8 @@ public class ScriptSchaffner : MonoBehaviour
             inputVertical = inputVertical * speedLimiter;
         }
         
-        
         rb.velocity = new Vector2(moveDirection.x * walkSpeed, moveDirection.y * walkSpeed); 
-        //Vector2 aimDirection = rbWeapon.position;
-        //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg -90f;
-        //rb.rotation = aimAngle;
-        
-        //rb.MovePosition(rb.position + movement * walkSpeed * Time.fixedDeltaTime);
-        /*
-        
-       
-        */
+     
     }
 
 }
