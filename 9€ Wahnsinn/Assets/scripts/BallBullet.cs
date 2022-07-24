@@ -14,7 +14,7 @@ public class BallBullet : MonoBehaviour
 
       }
 
-         else if (collision.gameObject.tag == "Untagged");
+         else if (collision.gameObject.tag == "Untagged")
       {
         Destroy(this.gameObject);
 
