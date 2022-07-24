@@ -25,6 +25,7 @@ public class ScoreManager : MonoBehaviour
         instance.highscore = PlayerPrefs.GetInt("highscore", 0);
         instance.scoreText.SetText(score.ToString() + " POINTS");
         instance.highscoreText.SetText("HIGHSCORE: " + highscore.ToString());
+        
     }
 
     public void AddPoint(int x)
