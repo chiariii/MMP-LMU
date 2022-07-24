@@ -11,6 +11,7 @@ public class GameOverScript : MonoBehaviour
     {
         Time.timeScale = 0f;
         GameOverScreen.SetActive(true);
+        Application.Quit();
 
     }
 
