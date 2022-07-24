@@ -29,7 +29,7 @@ public class PassengerAI : MonoBehaviour
     public Animator animator;
     Vector2 movement;
 
-    public float speed = 200f;    // default speed
+    public float speed = 100f;    // default speed
     public float nextWayPointDistance = 3f; // how close does an enemy needs to be to a waypoint
 
     Path path;  // current path that we are following

@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3616868984593588448}
-  - component: {fileID: 3616868984593588451}
+  - component: {fileID: -3256347183259998474}
   - component: {fileID: 2815666577071003779}
+  - component: {fileID: 3616868984593588451}
   - component: {fileID: 3616868984593588479}
   - component: {fileID: 3616868984593588478}
   - component: {fileID: 3616868984593588449}
@@ -37,6 +38,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3256347183259998474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616868984593588450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &2815666577071003779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616868984593588450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d63dbe9403a83e4289fa22ca983623a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Door1: {fileID: 3545007720689488271, guid: 4127929db1f0d5a4e9d504e2a4bc5749, type: 3}
+  Door2: {fileID: 5638531894522633872, guid: 5064ec739a1e9644d9f299b52f57f66a, type: 3}
+  Door3: {fileID: 8147515178620004584, guid: f0a0eb0de2fcd0643aa8d609c3399da1, type: 3}
+  Door4: {fileID: 7244954826664715388, guid: 7b05659e076fdc54caed28285c8f893e, type: 3}
+  Door5: {fileID: 5691252483073209707, guid: 16ca418dbc2f3f24aae6637fd9b51173, type: 3}
+  Door6: {fileID: 6754953002647517635, guid: 5fa241b09a99b8549b1496172863009a, type: 3}
+  target: {fileID: 0}
+  animator: {fileID: 3616868984593588476}
+  speed: 120
+  nextWayPointDistance: 2
 --- !u!212 &3616868984593588451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89,28 +140,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2815666577071003779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3616868984593588450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d63dbe9403a83e4289fa22ca983623a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Door1: {fileID: 0}
-  Door2: {fileID: 0}
-  Door3: {fileID: 0}
-  Door4: {fileID: 0}
-  Door5: {fileID: 0}
-  Door6: {fileID: 0}
-  target: {fileID: 0}
-  animator: {fileID: 3616868984593588476}
-  speed: 200
-  nextWayPointDistance: 1
 --- !u!114 &3616868984593588479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,8 +167,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 100
-  m_LinearDrag: 0
+  m_Mass: 1
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
