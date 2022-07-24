@@ -27,7 +27,7 @@ public class Damage : MonoBehaviour
 
 		healthBar.SetHealth(currentHealth);
 
-		if(currentHealth == 0){
+		if(currentHealth <= 0){
 			Time.timeScale = 0f;
 			uded.SetActive(true);
         	GameOverScreen.SetActive(true);

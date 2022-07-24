@@ -4,21 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Trainbar : MonoBehaviour
 {
-    public Slider slider1;
-    
+    public Slider trainSlider;
+    public Gradient gradient;
+    public Image fill;
 
     public void SetMaxCapacity(int capacity)
     {
-        slider1.maxValue = capacity;
-        slider1.value = 0;
+        trainSlider.maxValue = capacity;
+        
 
     
     }
 
-    public void SetCapacity(int capacity)
+    public void SetCurrentInTrain(int numberOfPassengers)
     {
  
-        slider1.value = capacity;
+        trainSlider.value = numberOfPassengers;
+        fill.color = gradient.Evaluate(trainSlider.normalizedValue);
 
         
     }

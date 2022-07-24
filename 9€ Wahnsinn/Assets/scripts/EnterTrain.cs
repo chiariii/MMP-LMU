@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnterTrain : MonoBehaviour
 {
   public int maxCapacity = 10;
-	public int currentCapacity;
+	public int currentPassengers = 0;
 
 	public Trainbar trainBar;
 	public GameObject GameOverScreen;
@@ -14,18 +14,18 @@ public class EnterTrain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		currentCapacity = 0;
 		trainBar.SetMaxCapacity(maxCapacity);
+		trainBar.SetCurrentInTrain(currentPassengers);
     }
 
    
 	public void PassengerEntersTrain(int enter)
 	{
-		currentCapacity += enter;
+		currentPassengers += enter;
 
-		trainBar.SetCapacity(currentCapacity);
+		trainBar.SetCurrentInTrain(currentPassengers);
 
-		if(currentCapacity == maxCapacity){
+		if(currentPassengers == maxCapacity){
 			Time.timeScale = 0f;
 			full.SetActive(true);
         	GameOverScreen.SetActive(true);
