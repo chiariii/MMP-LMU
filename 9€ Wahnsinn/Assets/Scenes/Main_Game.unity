@@ -7189,7 +7189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4eef9a931b5ed4fb6f3da2bb1c5380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highScoreField: {fileID: 0}
+  highScoreField: {fileID: 2011240599}
   scoreText: {fileID: 1694687914}
   highscoreText: {fileID: 264402713}
 --- !u!1 &1249913127
