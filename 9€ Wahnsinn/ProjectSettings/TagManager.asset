@@ -13,8 +13,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Obstacle
+  - Train
   - 
   - 
   - 
@@ -51,4 +51,7 @@ TagManager:
     locked: 0
   - name: Schaffner
     uniqueID: 2368201107
+    locked: 0
+  - name: Train
+    uniqueID: 2877635153
     locked: 0

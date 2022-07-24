@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8749579688181959678}
   - component: {fileID: 8749579688181959679}
   - component: {fileID: 8749579688181959664}
+  - component: {fileID: -2335488665413294847}
   - component: {fileID: 8749579688181959675}
   - component: {fileID: 8749579688181959676}
   - component: {fileID: 8749579688181959677}
@@ -108,6 +109,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2335488665413294847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8749579688181959665}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d63dbe9403a83e4289fa22ca983623a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Door1: {fileID: 0}
+  Door2: {fileID: 0}
+  Door3: {fileID: 0}
+  Door4: {fileID: 0}
+  Door5: {fileID: 0}
+  Door6: {fileID: 0}
+  target: {fileID: 0}
+  animator: {fileID: 0}
+  speed: 200
+  nextWayPointDistance: 3
 --- !u!114 &8749579688181959675
 MonoBehaviour:
   m_ObjectHideFlags: 0

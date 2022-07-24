@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8149249633501831714}
   - component: {fileID: 8149249633501831715}
   - component: {fileID: 8149249633501831712}
+  - component: {fileID: 1233579769061924490}
   - component: {fileID: 8149249633501831743}
   - component: {fileID: 8149249633501831740}
   m_Layer: 0
@@ -125,6 +126,28 @@ CapsuleCollider2D:
   m_Offset: {x: -0.00075149536, y: -0.16062486}
   m_Size: {x: 0.42101765, y: 0.70908856}
   m_Direction: 0
+--- !u!114 &1233579769061924490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8149249633501831713}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d63dbe9403a83e4289fa22ca983623a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Door1: {fileID: 0}
+  Door2: {fileID: 0}
+  Door3: {fileID: 0}
+  Door4: {fileID: 0}
+  Door5: {fileID: 0}
+  Door6: {fileID: 0}
+  target: {fileID: 0}
+  animator: {fileID: 8149249633501831740}
+  speed: 200
+  nextWayPointDistance: 1
 --- !u!114 &8149249633501831743
 MonoBehaviour:
   m_ObjectHideFlags: 0
