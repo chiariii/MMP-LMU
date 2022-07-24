@@ -7189,7 +7189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4eef9a931b5ed4fb6f3da2bb1c5380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hcingo: {fileID: 2011240599}
+  highScoreField: {fileID: 0}
   scoreText: {fileID: 1694687914}
   highscoreText: {fileID: 264402713}
 --- !u!1 &1249913127
@@ -14537,7 +14537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4eef9a931b5ed4fb6f3da2bb1c5380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hcingo: {fileID: 0}
+  highScoreField: {fileID: 0}
   scoreText: {fileID: 1813670563}
   highscoreText: {fileID: 0}
 --- !u!114 &1813670563
@@ -14688,7 +14688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4eef9a931b5ed4fb6f3da2bb1c5380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hcingo: {fileID: 0}
+  highScoreField: {fileID: 0}
   scoreText: {fileID: 1841465517}
   highscoreText: {fileID: 0}
 --- !u!114 &1841465517
@@ -19025,6 +19025,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1302850190}
+    - target: {fileID: 1866624589837807113, guid: d317b121e2f103540a7ca97c68fb40ea, type: 3}
+      propertyPath: youDiedScreen
+      value: 
+      objectReference: {fileID: 1595565587}
     - target: {fileID: 1866624589837807113, guid: d317b121e2f103540a7ca97c68fb40ea, type: 3}
       propertyPath: GameOverScreen
       value: 
